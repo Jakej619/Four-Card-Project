@@ -1,0 +1,49 @@
+
+
+.card {
+    background-color: $color-white;
+    box-shadow: 0 2rem 3rem rgba($color-black, .1);
+    border-radius: 4px;
+
+    &__content {
+        padding-left: 1.7rem;
+        padding-top: 2rem;
+    }
+
+    &__heading {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__info {
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+
+    &__icon {
+        float: right;
+        padding-right: 3rem;
+        padding-top: 4rem;
+    }
+
+    &--red {
+        border-top: 4px solid $border-color-red;
+    }
+
+    &--cyan {
+        border-top: 4px solid $border-color-cyan;
+    }
+
+    &--yellow {
+        border-top: 4px solid $border-color-yellow;
+    }
+
+    &--blue {
+        border-top: 4px solid $border-color-blue;
+    }
+}

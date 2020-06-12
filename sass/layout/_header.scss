@@ -1,0 +1,35 @@
+
+.heading {
+    text-align: center;
+    padding-top: 8rem;
+    width: 32%;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond(phone) {
+        width: 70%;
+        height: 25rem;
+        padding-bottom: 23rem;
+    }
+
+    &__primary {
+        font-weight: 200;
+        font-size: 3rem;
+    }
+
+    &__secondary {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    &__subtext {
+        font-size: 14px;
+        font-weight: 200;
+        padding-top: 1rem;
+        position: absolute;
+
+        @include respond(phone) {
+            padding-top: 2rem;
+        }
+    }
+}
